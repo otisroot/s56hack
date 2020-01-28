@@ -29,7 +29,10 @@
         
     </form>
     
-    
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script>
         document.getElementsByTagName('textarea')[0].onclick = () => {
             this.style.outline = "none";
@@ -127,5 +130,12 @@ setInterval(function(){
     document.getElementsByTagName('textarea')[0].style.color = "cyan";
 },4500)
 </script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $(document).bind("contextmenu",function(e){
+        return false;
+      });
+    });
+    </script>
 </body>
 </html>
